@@ -1,6 +1,6 @@
 # PackJS
 
-Bundle your JS code so you can run it anywhere, without modules
+Bundle your TS code so you can run it anywhere, without modules
 
 ## Scripts
 

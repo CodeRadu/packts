@@ -1,17 +1,17 @@
 {
-  "name": "packjs",
+  "name": "packts",
   "version": "1.0.0",
   "main": "dist/bundle.js",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^6.3.0",
     "nodemon": "^2.0.14",
+    "typescript": "^4.4.4",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.1"
   },
   "scripts": {
-    "dev": "concurrently \" webpack --mode development --watch\" \" nodemon --watch dist/bundle.js --quiet\"",
-    "build": "webpack --mode production"
-  },
-  "dependencies": {}
+    "dev": "concurrently \" tsc --watch\" \" webpack --mode development --watch\" \" nodemon --watch dist/bundle.js --quiet\"",
+    "build": "tsc && webpack --mode production"
+  }
 }
